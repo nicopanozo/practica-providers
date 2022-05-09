@@ -2,9 +2,9 @@
 {
     public class Company
     {
-        public string Nombre { get; set; }
-        public string Direccion { get; set; }
-        public int Telefono { get; set; }
+        public string business_name { get; set; }
+        public string full_address { get; set; }
+        public string phone_number { get; set; }
 
     }
 }
