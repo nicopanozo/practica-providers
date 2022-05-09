@@ -10,3 +10,11 @@ C:\Users\nicopanozo\Desktop\practica3_certi\ProveedoresGrupoD\Logic\obj\Debug\ne
 C:\Users\nicopanozo\Desktop\practica3_certi\ProveedoresGrupoD\Logic\obj\Debug\net5.0\ref\Logic.dll
 C:\Users\nicopanozo\Desktop\practica3_certi\ProveedoresGrupoD\Logic\obj\Debug\net5.0\Logic.pdb
 C:\Users\nicopanozo\Desktop\practica3_certi\ProveedoresGrupoD\Logic\obj\Debug\net5.0\Logic.csproj.AssemblyReference.cache
+C:\Users\Usuario 64\Desktop\CERTI\OFI\ProveedoresGrupoD\Logic\obj\Debug\net5.0\Logic.csproj.AssemblyReference.cache
+C:\Users\Usuario 64\Desktop\CERTI\OFI\ProveedoresGrupoD\Logic\obj\Debug\net5.0\Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario 64\Desktop\CERTI\OFI\ProveedoresGrupoD\Logic\obj\Debug\net5.0\Logic.AssemblyInfoInputs.cache
+C:\Users\Usuario 64\Desktop\CERTI\OFI\ProveedoresGrupoD\Logic\obj\Debug\net5.0\Logic.AssemblyInfo.cs
+C:\Users\Usuario 64\Desktop\CERTI\OFI\ProveedoresGrupoD\Logic\obj\Debug\net5.0\Logic.csproj.CoreCompileInputs.cache
+C:\Users\Usuario 64\Desktop\CERTI\OFI\ProveedoresGrupoD\Logic\obj\Debug\net5.0\Logic.dll
+C:\Users\Usuario 64\Desktop\CERTI\OFI\ProveedoresGrupoD\Logic\obj\Debug\net5.0\ref\Logic.dll
+C:\Users\Usuario 64\Desktop\CERTI\OFI\ProveedoresGrupoD\Logic\obj\Debug\net5.0\Logic.pdb

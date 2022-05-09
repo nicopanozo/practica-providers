@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hmp05Lkg1nMZNCufXimglmQlF+LxyIuB0bVpBswV+uAf5Cqkum4L7Ykvf6eA4Wum0byBbt+3zIdgkS9+W+rYnw==",
+  "dgSpecHash": "jfvLjex+tLMV3NXvYuRRJR7M9w0j5yNFZRb85qiqwzlsarKklF7rFAM+oJOc/MkCGpojMNDR7/M1ZHhGof8Z7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\OFI\\ProveedoresGrupoD\\Logic\\Logic.csproj",
+  "projectFilePath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\OFI\\ProveedoresGrupoD\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario 64\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\Usuario 64\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

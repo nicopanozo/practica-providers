@@ -10,7 +10,7 @@ using Logic.Entities;
 namespace ProveedoresGrupoD.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/[controller]")]
     public class ProvidersController : ControllerBase
     {
         public ProvidersController()
