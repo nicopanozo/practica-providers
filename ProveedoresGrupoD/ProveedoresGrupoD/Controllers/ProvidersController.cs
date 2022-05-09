@@ -26,22 +26,27 @@ namespace ProveedoresGrupoD.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateProviders(string name, string lastname, string ci)
+        public IActionResult CreateProviders(int id, string name, string lastname, string num, string direccion, string cat, DateTime fecha)
         {
             ProviderManager providerManager = new ProviderManager();
-            Provider createdProvider = providerManager.CreateProviders(name, lastname, ci);
+            Provider createdProvider = providerManager.CreateProviders(id, name, lastname, num, direccion, cat, fecha);
             return Ok(createdProvider);
         }
         [HttpPut]
-        public IActionResult UpdateProviders()
+        public IActionResult UpdateProviders(int id, string name, string lastname, string num, string direccion, string cat, DateTime fecha)
         {
+            ProviderManager providerManager = new ProviderManager();
+            Provider modifiedProvider = providerManager.UpdateProvider(id, name, lastname, num, direccion, cat, fecha);
             return Ok();
         }
         [HttpDelete]
-        public IActionResult DeleteProviders()
+        public IActionResult DeleteProviders(int id)
         {
-            return Ok();
+            ProviderManager providerManager = new ProviderManager();
+            Provider deletedProvider = providerManager.DeleteProvider(id);
+            return Ok(deletedProvider);
         }
+
     }
 }
 
