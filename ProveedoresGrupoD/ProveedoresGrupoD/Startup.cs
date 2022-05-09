@@ -28,9 +28,27 @@ namespace ProveedoresGrupoD
         {
 
             services.AddControllers();
+            services.AddSwaggerGen();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProveedoresGrupoD", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Proveedores Grupo D",
+                    Description = "Proyecto para la materia de Certificacion 1",
+                    TermsOfService = new Uri("https://example.com/terms"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Nicolas Panozo, Odaliz Rojas, Gabriela Cuellar",
+                        Email = string.Empty,
+                        Url = new Uri("https://twitter.com/spboyer"),
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Usar bajo licencia: ",
+                        Url = new Uri("https://example.com/license"),
+                    }
+                });
             });
         }
 
@@ -43,6 +61,11 @@ namespace ProveedoresGrupoD
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProveedoresGrupoD v1"));
             }
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.)
+            app.UseSwaggerUI();
 
             app.UseHttpsRedirection();
 
