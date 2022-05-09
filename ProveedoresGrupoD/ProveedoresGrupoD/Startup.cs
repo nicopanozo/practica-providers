@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Logic.Managers;
 
 namespace ProveedoresGrupoD
 {
@@ -50,6 +51,7 @@ namespace ProveedoresGrupoD
                     }
                 });
             });
+            services.AddSingleton<ProviderManager>(); // injector new manager GLOBAL
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -32,14 +32,19 @@ namespace Logic.Managers
 
         public Provider UpdateProvider(int id, string name, string lastname, string num, string direccion, string cat, DateTime fecha)
         {
-            _providers[id].Name = name;
-            return _providers[id];
+            _providers[id-1].Name = name;
+            _providers[id-1].LastName = lastname;
+            _providers[id-1].Numero = num;
+            _providers[id-1].Direccion = direccion;
+            _providers[id-1].Categoria = cat;
+            _providers[id-1].Fecha = fecha;
+            return _providers[id-1];
         }
 
         public Provider DeleteProvider(int id)
         {
-            Provider deletedProduct = _providers[id];
-            _providers.Remove(_providers[id]);
+            Provider deletedProduct = _providers[id-1];
+            _providers.Remove(_providers[id-1]);
             return deletedProduct;
         }
 

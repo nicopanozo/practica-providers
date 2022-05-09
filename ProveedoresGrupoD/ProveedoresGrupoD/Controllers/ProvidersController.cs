@@ -13,37 +13,36 @@ namespace ProveedoresGrupoD.Controllers
     [Route("[controller]")]
     public class ProvidersController : ControllerBase
     {
-        public ProvidersController()
+        private ProviderManager _providerManager;
+        public ProvidersController(ProviderManager providerManager)
         {
-            //Darle Http methods, GET, POST, PUT, DELETE
+            //se inyectan muchos managers los que se desee en el parentesis de este constructor
+            _providerManager = providerManager;
         }
 
         [HttpGet]
         public IActionResult GetProviders()
         {
-            ProviderManager providerManager = new ProviderManager();
-            return Ok(providerManager.GetProviders());
+            return Ok(_providerManager.GetProviders());
         }
 
         [HttpPost]
         public IActionResult CreateProviders(int id, string name, string lastname, string num, string direccion, string cat, DateTime fecha)
         {
-            ProviderManager providerManager = new ProviderManager();
-            Provider createdProvider = providerManager.CreateProviders(id, name, lastname, num, direccion, cat, fecha);
+            Provider createdProvider = _providerManager.CreateProviders(id, name, lastname, num, direccion, cat, fecha);
+
             return Ok(createdProvider);
         }
         [HttpPut]
         public IActionResult UpdateProviders(int id, string name, string lastname, string num, string direccion, string cat, DateTime fecha)
         {
-            ProviderManager providerManager = new ProviderManager();
-            Provider modifiedProvider = providerManager.UpdateProvider(id, name, lastname, num, direccion, cat, fecha);
-            return Ok();
+            Provider modifiedProvider = _providerManager.UpdateProvider(id, name, lastname, num, direccion, cat, fecha);
+            return Ok(modifiedProvider);
         }
         [HttpDelete]
         public IActionResult DeleteProviders(int id)
         {
-            ProviderManager providerManager = new ProviderManager();
-            Provider deletedProvider = providerManager.DeleteProvider(id);
+            Provider deletedProvider = _providerManager.DeleteProvider(id);
             return Ok(deletedProvider);
         }
 
