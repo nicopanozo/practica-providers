@@ -12,5 +12,7 @@ namespace Logic.Entities
         public String Direccion { get; set; }
         public String Categoria { get; set; }
         public DateTime Fecha { get; set; }
+
+        public string Status { get; set; }
     }
 }
