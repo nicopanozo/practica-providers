@@ -33,12 +33,14 @@ namespace ProveedoresGrupoD.Controllers
 
             return Ok(createdProvider);
         }
+
         [HttpPut]
         public IActionResult UpdateProviders(int id, string name, string lastname, string num, string direccion, string cat, DateTime fecha)
         {
             Provider modifiedProvider = _providerManager.UpdateProvider(id, name, lastname, num, direccion, cat, fecha);
             return Ok(modifiedProvider);
         }
+
         [HttpDelete]
         public IActionResult DeleteProviders(int id)
         {
@@ -46,6 +48,12 @@ namespace ProveedoresGrupoD.Controllers
             return Ok(deletedProvider);
         }
 
+        [HttpEnableProvider]
+        public IActionResult EnableProviders(int id)
+        {
+            Provider enableProvider  = _providerManager.EnableProvider(id);
+            return Ok(enableProvider);
+        }
     }
 }
 
