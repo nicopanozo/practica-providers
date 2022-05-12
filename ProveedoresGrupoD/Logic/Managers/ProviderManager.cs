@@ -48,8 +48,10 @@ namespace Logic.Managers
             return deletedProduct;
         }
 
-
-
-
+        public Boolean EnableProvider(int id)
+        {
+            Provider providerFound = _providers.Find(provider => provider.id == id);
+            return userFound != null;
+        }
     }
 }
