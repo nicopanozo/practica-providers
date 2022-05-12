@@ -1,27 +1,32 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    ".NETFramework,Version=v5.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    ".NETFramework,Version=v5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nicopanozo\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicopanozo\\Desktop\\practica3_certi\\ProveedoresGrupoD\\Logic\\Logic.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj",
       "projectName": "Logic",
-      "projectPath": "C:\\Users\\nicopanozo\\Desktop\\practica3_certi\\ProveedoresGrupoD\\Logic\\Logic.csproj",
-      "packagesPath": "C:\\Users\\nicopanozo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicopanozo\\Desktop\\practica3_certi\\ProveedoresGrupoD\\Logic\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Logic\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\nicopanozo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -31,8 +36,7 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net50": {
           "projectReferences": {}
         }
       },
@@ -43,24 +47,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
-        "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
-        ],
-        "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+      "net50": {
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

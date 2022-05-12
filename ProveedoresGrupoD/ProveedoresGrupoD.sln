@@ -5,7 +5,17 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProveedoresGrupoD", "ProveedoresGrupoD\ProveedoresGrupoD.csproj", "{6BA51B9A-F0C1-4D10-9E48-6FEDC205D200}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{7633E924-8036-426D-883B-C54887DF1EB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic", "Logic\Logic.csproj", "{7633E924-8036-426D-883B-C54887DF1EB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Presentation", "01. Presentation", "{EAE06DA8-B8B5-4D21-8C55-4E4245C9B220}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Business Logic", "02. Business Logic", "{595B8EF7-8057-4815-B003-B0CF5A44BDB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. DataBase", "03. DataBase", "{B9EC6C32-B7D9-43F3-B17D-46072BF8F2E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Integration", "04. Integration", "{CCB89CAC-EAB0-4066-8EF1-AD9F72065B3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Authorization", "05. Authorization", "{AD2664E6-6F7B-4573-9B97-19F3A01A6911}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +34,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6BA51B9A-F0C1-4D10-9E48-6FEDC205D200} = {EAE06DA8-B8B5-4D21-8C55-4E4245C9B220}
+		{7633E924-8036-426D-883B-C54887DF1EB1} = {595B8EF7-8057-4815-B003-B0CF5A44BDB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {678DF285-2149-423C-BD0C-DDABF9FFBF08}
