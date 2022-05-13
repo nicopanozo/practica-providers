@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj": {
+    "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj",
-        "projectName": "Logic",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Logic\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -41,6 +41,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

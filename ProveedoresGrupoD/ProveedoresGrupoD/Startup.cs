@@ -9,11 +9,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Hosting;
 using System.Linq;
 using System.Threading.Tasks;
 using Logic.Managers;
-using Microsoft.OpenApi.Models;
 
 namespace ProveedoresGrupoD
 {
