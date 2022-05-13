@@ -1,4 +1,5 @@
 ﻿using System;
+using Services;
 
 namespace Logic.Entities
 {
@@ -14,5 +15,6 @@ namespace Logic.Entities
         public DateTime Fecha { get; set; }
 
         public string Status { get; set; }
+        public Company Company { get; set; }
     }
 }
