@@ -31,12 +31,10 @@ namespace Logic.Managers
 
         public List<Provider> GetProviders()
         {
-
             var ingreso = new DateTime();
             List<Provider> _list = new List<Provider>();
             foreach (Provider p in _providers)
             {
-              
                 if (p.Company == null)
                 {
                     company = _companyService.GetCompany().Result;
@@ -45,14 +43,10 @@ namespace Logic.Managers
                 ingreso = DateTime.Parse(p.Fecha);
                 p.ContractExpiration = (ingreso.Date - DateTime.Today).Days;
                 p.Contract = p.ContractExpiration>0?true:false;
-                
                 _list.Add(p);
             }
-
             _providers = _list;
-
             return _list;
-
         }
 
         public int FindProvider(int id)
@@ -64,13 +58,20 @@ namespace Logic.Managers
                 if (p.Id == id)
                     _provider = p;
             }
-
-
             var ingreso = DateTime.Parse(_provider.Fecha);
-            dias =  (ingreso.Date - DateTime.Today).Days;
-            //string timeString = time.ToString("MM/dd/yyyy hh:mm:ss tt");
-
+            dias =  (ingreso.Date - DateTime.Today).Days; 
             return dias;
+        }
+
+        public List<Provider> GetProviderStatus()
+        {
+            List<Provider> _list = new List<Provider>();
+            foreach (Provider prov in _list)
+            {
+                if (prov.Status == true)
+                    _list.Add(prov);
+            }
+            return _list;
         }
 
         public Provider CreateProviders(int id, string name, string lastname, string num, string direccion, string cat, string fecha)
@@ -88,10 +89,7 @@ namespace Logic.Managers
                 if (p.Id == id)
                     _provider = p;
             }
-
-
             string _fecha = fecha == null ? _provider.Fecha : fecha;
-
             DateTime dt;
 
             var isValidDate = DateTime.TryParse(_fecha, out dt);
@@ -100,7 +98,6 @@ namespace Logic.Managers
             else
                 Console.WriteLine($"{_fecha} no es una cadena de fecha");
 
-
             _providers[id-1].Name = name==null?_provider.Name:name;
             _providers[id-1].LastName = lastname == null ? _provider.LastName : lastname; 
             _providers[id-1].Numero =  num == null ? _provider.Numero : num;
@@ -108,6 +105,7 @@ namespace Logic.Managers
             _providers[id-1].Categoria =  cat == null ? _provider.Categoria : cat;
             _providers[id - 1].Fecha = _fecha;
             _providers[id - 1].Status =  status;
+
             return _providers[id-1];
         }
 
@@ -123,17 +121,5 @@ namespace Logic.Managers
             Provider providerFound = _providers.Find(provider => provider.Id == id);
             _providers[id].Status = true;
         }
-
-        /*
-        public void createJsonFile(string path)
-        {
-            File.WriteAllLines(path, JsonConvert.SerializeObject(_providers));
-
-
-        }
-        */
-
-
-
     }
 }
