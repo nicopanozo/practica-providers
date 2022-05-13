@@ -57,7 +57,7 @@ namespace ProveedoresGrupoD.Controllers
             return Ok(deletedProvider);
         }
 
-
+        /*
         [HttpPost]
         [Route("json")]
         public IActionResult createJsonFile(string path)
@@ -65,6 +65,7 @@ namespace ProveedoresGrupoD.Controllers
             string jsonProvider = _providerManager.createJsonFile(path);
             return Ok(jsonProvider);
         }
+        */
     }
 }
 
