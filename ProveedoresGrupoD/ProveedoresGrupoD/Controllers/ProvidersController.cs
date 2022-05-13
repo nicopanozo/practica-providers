@@ -21,6 +21,7 @@ namespace ProveedoresGrupoD.Controllers
         }
 
         [HttpGet]
+        [Route("/search-providers")]
         public IActionResult GetProviders()
         {
             return Ok(_providerManager.GetProviders());

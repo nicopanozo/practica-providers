@@ -5,15 +5,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Logic.Entities;
+
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using Services;
+
 
 namespace Logic.Managers
 {
     public class ProviderManager
     {
         private List<Provider> _providers;
-        public ProviderManager()
+        private IConfiguration _configuration;
+        private CompanyService _companyService;
+        Company company;
+        public ProviderManager(IConfiguration configuration, CompanyService companyService)
         {
+            _configuration = configuration;
+            _companyService = companyService;
             _providers = new List<Provider>();
             _providers.Add(new Provider() { Id = 1, Name = "Nicolas", LastName = "Panozo", Numero = "6500000", Direccion = "Av Siempre Viva #1005", Categoria = "SOCCER", Fecha = "2022-05-13" , Status = false });
             _providers.Add(new Provider() {Id = 2, Name = "Michael", LastName = "Jordan", Numero = "4578209", Direccion = "Av Circunvalación #892", Categoria = "BASKET", Fecha = "2022-05-01",Status = false });
@@ -22,10 +31,17 @@ namespace Logic.Managers
 
         public List<Provider> GetProviders()
         {
+
             var ingreso = new DateTime();
             List<Provider> _list = new List<Provider>();
             foreach (Provider p in _providers)
             {
+              
+                if (p.Company == null)
+                {
+                    company = _companyService.GetCompany().Result;
+                    p.Company = company;
+                }
                 ingreso = DateTime.Parse(p.Fecha);
                 p.ContractExpiration = (ingreso.Date - DateTime.Today).Days;
                 p.Contract = p.ContractExpiration>0?true:false;
@@ -36,6 +52,7 @@ namespace Logic.Managers
             _providers = _list;
 
             return _list;
+
         }
 
         public int FindProvider(int id)
@@ -58,7 +75,7 @@ namespace Logic.Managers
 
         public Provider CreateProviders(int id, string name, string lastname, string num, string direccion, string cat, string fecha)
         {
-            Provider createdProvider = new Provider() {Id = id, Name = name, LastName = lastname, Numero = num, Direccion = direccion, Categoria = cat, Fecha = fecha};
+            Provider createdProvider = new Provider() {Id = id, Name = name, LastName = lastname, Numero = num, Direccion = direccion, Categoria = cat, Fecha = fecha, Company = null };
             _providers.Add(createdProvider);
             return createdProvider;
         }

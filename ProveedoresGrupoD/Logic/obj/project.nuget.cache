@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "TWOAQhnhYCtyGIyU+vo148jELNx0EvVY99OZMBa425UYzvZgapuNsCL0ess7LIERue7LN6Tcl/SxlvTUX7C2Zw==",
+  "dgSpecHash": "Uyc3UU9cKzpVBhrb5GX3fSYLmyTV3MRC8Dhg29guA04ChTVJKUKFc71SkJTNJt+kUACo8hjgYiZDCD6+t5p7ug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\ODALIZ\\NET-Core-Apps\\practica-providers\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario 64\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
+    "C:\\Users\\Usuario 64\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario 64\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario 64\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Usuario 64\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
