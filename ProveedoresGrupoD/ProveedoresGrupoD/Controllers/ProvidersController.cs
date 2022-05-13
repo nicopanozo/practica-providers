@@ -27,8 +27,16 @@ namespace ProveedoresGrupoD.Controllers
             return Ok(_providerManager.GetProviders());
         }
 
+
+        [HttpGet]
+        [Route("find")]
+        public IActionResult FindProvider(int id)
+        {
+            return Ok(_providerManager.FindProvider(id));
+        }
+
         [HttpPost]
-        public IActionResult CreateProviders(int id, string name, string lastname, string num, string direccion, string cat, DateTime fecha)
+        public IActionResult CreateProviders(int id, string name, string lastname, string num, string direccion, string cat, string fecha)
         {
             Provider createdProvider = _providerManager.CreateProviders(id, name, lastname, num, direccion, cat, fecha);
 
@@ -36,7 +44,7 @@ namespace ProveedoresGrupoD.Controllers
         }
 
         [HttpPut]
-        public IActionResult UpdateProviders(int id, string name, string lastname, string num, string direccion, string cat, DateTime fecha, string status)
+        public IActionResult UpdateProviders(int id, string name, string lastname, string num, string direccion, string cat, string fecha, Boolean status)
         {
             Provider modifiedProvider = _providerManager.UpdateProvider(id, name, lastname, num, direccion, cat, fecha, status);
             return Ok(modifiedProvider);
@@ -47,6 +55,15 @@ namespace ProveedoresGrupoD.Controllers
         {
             Provider deletedProvider = _providerManager.DeleteProvider(id);
             return Ok(deletedProvider);
+        }
+
+
+        [HttpPost]
+        [Route("json")]
+        public IActionResult createJsonFile(string path)
+        {
+            string jsonProvider = _providerManager.createJsonFile(path);
+            return Ok(jsonProvider);
         }
     }
 }
