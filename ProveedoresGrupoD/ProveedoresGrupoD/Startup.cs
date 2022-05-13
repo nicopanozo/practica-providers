@@ -30,7 +30,6 @@ namespace ProveedoresGrupoD
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -57,11 +56,10 @@ namespace ProveedoresGrupoD
                     }
                 });
             });
-            services.AddSingleton<ProviderManager>(); // injector new manager GLOBAL
+            services.AddSingleton<ProviderManager>();
             services.AddTransient<CompanyService>();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
