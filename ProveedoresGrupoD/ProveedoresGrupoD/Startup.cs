@@ -13,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Logic.Managers;
 using Services;
+using ActiveDirectoryService;
 
 namespace ProveedoresGrupoD
 {
