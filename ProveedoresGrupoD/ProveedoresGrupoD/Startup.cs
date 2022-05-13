@@ -13,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Logic.Managers;
 using Services;
+using Serilog;
 
 namespace ProveedoresGrupoD
 {
@@ -26,6 +27,16 @@ namespace ProveedoresGrupoD
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            Log.Logger = new LoggerConfiguration().ReadFrom
+                .Configuration(Configuration)
+                .Enrich.FromLogContext()
+                .Enrich.WithMachineName()
+                .Enrich.WithEnvironmentName()
+                .CreateLogger();
+
+            Log.Information("Se ha configurado bien los logs");
+            Log.Information("Se ha cargado satisfactoriamente el archivo e configuracion");
         }
 
         public IConfiguration Configuration { get; }

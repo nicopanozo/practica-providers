@@ -16,3 +16,12 @@ C:\Users\Usuario 64\Desktop\CERTI\Actualizado de Oda\practica-providers\Proveedo
 C:\Users\Usuario 64\Desktop\CERTI\Actualizado de Oda\practica-providers\ProveedoresGrupoD\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
 C:\Users\Usuario 64\Desktop\CERTI\Actualizado de Oda\practica-providers\ProveedoresGrupoD\Services\obj\Debug\netcoreapp3.1\Services.dll
 C:\Users\Usuario 64\Desktop\CERTI\Actualizado de Oda\practica-providers\ProveedoresGrupoD\Services\obj\Debug\netcoreapp3.1\Services.pdb
+C:\Users\Usuario 64\Desktop\CERTI\Rama Nico Dev\practica-providers\ProveedoresGrupoD\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+C:\Users\Usuario 64\Desktop\CERTI\Rama Nico Dev\practica-providers\ProveedoresGrupoD\Services\bin\Debug\netcoreapp3.1\Services.dll
+C:\Users\Usuario 64\Desktop\CERTI\Rama Nico Dev\practica-providers\ProveedoresGrupoD\Services\bin\Debug\netcoreapp3.1\Services.pdb
+C:\Users\Usuario 64\Desktop\CERTI\Rama Nico Dev\practica-providers\ProveedoresGrupoD\Services\obj\Debug\netcoreapp3.1\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario 64\Desktop\CERTI\Rama Nico Dev\practica-providers\ProveedoresGrupoD\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+C:\Users\Usuario 64\Desktop\CERTI\Rama Nico Dev\practica-providers\ProveedoresGrupoD\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+C:\Users\Usuario 64\Desktop\CERTI\Rama Nico Dev\practica-providers\ProveedoresGrupoD\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
+C:\Users\Usuario 64\Desktop\CERTI\Rama Nico Dev\practica-providers\ProveedoresGrupoD\Services\obj\Debug\netcoreapp3.1\Services.dll
+C:\Users\Usuario 64\Desktop\CERTI\Rama Nico Dev\practica-providers\ProveedoresGrupoD\Services\obj\Debug\netcoreapp3.1\Services.pdb

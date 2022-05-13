@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj": {}
+    "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj": {
+    "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj",
         "projectName": "Logic",
-        "projectPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj",
+        "projectPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Logic\\Logic.csproj",
         "packagesPath": "C:\\Users\\Usuario 64\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Logic\\obj\\",
+        "outputPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Logic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario 64\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj"
+              "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj"
               }
             }
           }
@@ -43,6 +43,44 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.11.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Serilog.Enrichers.Thread": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,14 +100,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj": {
+    "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Usuario 64\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\obj\\",
+        "outputPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario 64\\AppData\\Roaming\\NuGet\\NuGet.Config",

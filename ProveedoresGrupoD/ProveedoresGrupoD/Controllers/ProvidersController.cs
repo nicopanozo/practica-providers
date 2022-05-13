@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Logic.Managers;
 using Logic.Entities;
+using Serilog;
 
 namespace ProveedoresGrupoD.Controllers
 {
@@ -24,6 +25,7 @@ namespace ProveedoresGrupoD.Controllers
         [Route("/search-providers")]
         public IActionResult GetProviders()
         {
+            Log.Information("Antes de pedir companys");
             return Ok(_providerManager.GetProviders());
         }
 

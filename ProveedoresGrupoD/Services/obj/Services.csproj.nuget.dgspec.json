@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj": {}
+    "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj": {
+    "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Usuario 64\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\obj\\",
+        "outputPath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario 64\\AppData\\Roaming\\NuGet\\NuGet.Config",

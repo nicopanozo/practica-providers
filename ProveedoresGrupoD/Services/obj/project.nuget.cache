@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qi2t4eZC3SK3tYqfwlJzRo6/rUxBZBfs8zWAG2zybu0/P2N0Q1Pg3IPX9aSPsVQ2rdQRlC3oO06kc21U2rRSUw==",
+  "dgSpecHash": "rV8AaETm+nBCyoldC8O+jahyLkLqQEiANV1S1796OG/F5d+IqnPKkLKOMjr1nZ6G7u9POZ3pe5hlI7f0c/b+dQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Actualizado de Oda\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
+  "projectFilePath": "C:\\Users\\Usuario 64\\Desktop\\CERTI\\Rama Nico Dev\\practica-providers\\ProveedoresGrupoD\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario 64\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\Usuario 64\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
