@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Logic.Managers;
 using Logic.Entities;
+using ActiveDirectoryService;
 
 namespace ProveedoresGrupoD.Controllers
 {
@@ -14,22 +15,31 @@ namespace ProveedoresGrupoD.Controllers
     public class ProvidersController : ControllerBase
     {
         private ProviderManager _providerManager;
+        private List<Provider> _listProviders;
+
         public ProvidersController(ProviderManager providerManager)
         {
-            //se inyectan muchos managers los que se desee en el parentesis de este constructor
             _providerManager = providerManager;
         }
 
         [HttpGet]
         [Route("/search-providers")]
-        public IActionResult GetProviders()
+        public IActionResult GetProviders([FromHeader] string filtro)
         {
-            return Ok(_providerManager.GetProviders());
+            if (filtro == "All" | filtro == null)
+            {
+                _listProviders = _providerManager.GetProviders();
+            }else if(filtro == "only enable")
+            {
+                _listProviders = _providerManager.GetProviderStatus();
+            }
+            return Ok(_listProviders);
         }
 
 
         [HttpGet]
         [Route("find")]
+
         public IActionResult FindProvider(int id)
         {
             return Ok(_providerManager.FindProvider(id));
@@ -56,16 +66,6 @@ namespace ProveedoresGrupoD.Controllers
             Provider deletedProvider = _providerManager.DeleteProvider(id);
             return Ok(deletedProvider);
         }
-
-        /*
-        [HttpPost]
-        [Route("json")]
-        public IActionResult createJsonFile(string path)
-        {
-            string jsonProvider = _providerManager.createJsonFile(path);
-            return Ok(jsonProvider);
-        }
-        */
     }
 }
 
