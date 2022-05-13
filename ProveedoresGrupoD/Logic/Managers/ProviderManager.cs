@@ -13,7 +13,7 @@ namespace Logic.Managers
         public ProviderManager()
         {
             _providers = new List<Provider>();
-            _providers.Add(new Provider() {Id = 1, Name = "Nicolas", LastName = "Panozo", Numero = "6500000", Direccion = "Av Siempre Viva #1005", Categoria = "Fútbol", Fecha = DateTime.Today},Status = "Disabled");
+            _providers.Add(new Provider() { Id = 1, Name = "Nicolas", LastName = "Panozo", Numero = "6500000", Direccion = "Av Siempre Viva #1005", Categoria = "Fútbol", Fecha = DateTime.Today, Status = "Disabled" });
             _providers.Add(new Provider() {Id = 2, Name = "Michael", LastName = "Jordan", Numero = "4578209", Direccion = "Av Circunvalación #892", Categoria = "Basquet", Fecha = DateTime.Today,Status = "Disabled" });
             _providers.Add(new Provider() {Id = 3, Name = "Adam", LastName = "Sandler", Numero = "438294", Direccion = "c/ Pedro de Valdivia #4678", Categoria = "Fútbol", Fecha = DateTime.Today,Status = "Disabled" });
         }
@@ -30,7 +30,7 @@ namespace Logic.Managers
             return createdProvider;
         }
 
-        public Provider UpdateProvider(int id, string name, string lastname, string num, string direccion, string cat, DateTime fecha, Status status)
+        public Provider UpdateProvider(int id, string name, string lastname, string num, string direccion, string cat, DateTime fecha, String status)
         {
             _providers[id-1].Name = name;
             _providers[id-1].LastName = lastname;
@@ -51,7 +51,7 @@ namespace Logic.Managers
 
         public void EnableProvider(int id)
         {
-            Provider providerFound = _providers.Find(provider => provider.id == id);
+            Provider providerFound = _providers.Find(provider => provider.Id == id);
             _providers[id].Status = "Enable";
         }
     }
