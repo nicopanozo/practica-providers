@@ -11,8 +11,11 @@ namespace Logic.Entities
 
         public String Direccion { get; set; }
         public String Categoria { get; set; }
-        public DateTime Fecha { get; set; }
+        public String Fecha { get; set; }
 
-        public string Status { get; set; }
+        public Boolean Status { get; set; }
+
+        public Boolean Contract { get; set; }
+        public int ContractExpiration { get; set; }
     }
 }
