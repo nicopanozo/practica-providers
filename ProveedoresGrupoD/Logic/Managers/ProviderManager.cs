@@ -124,16 +124,10 @@ namespace Logic.Managers
             _providers[id].Status = true;
         }
 
-        /*
-        public void createJsonFile(string path)
+        public void SetListJson(List<Provider> jsonlist)
         {
-            File.WriteAllLines(path, JsonConvert.SerializeObject(_providers));
-
-
+            _providers = jsonlist;
         }
-        */
-
-
 
     }
 }
